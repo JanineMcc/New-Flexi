@@ -1,0 +1,184 @@
+/* Not ethat div needs ID when using bootstrap to target the specific href in bootstrap plug in
+use ID's sparingly, only for sections and bootstraps
+inline styling is bad practice and laziness */
+
+/* HTML items */
+body {
+  font-family: "Montserrat";
+}
+
+/* note use , to seperate many, but only space if mixing like # title .container-fluid { for hieracy - note reade right to left child on rigt if there is a space, parent on left */
+/* if you combine 2 selectors with no space you read left to right and it needs to be in the same element (one class with 2 selectors) */
+h1. h2. h3, h4, h5, h6 {
+  font-family: 'Montserrat-black', sans-serif;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+#title {
+  background-color: #FFC7EA;
+  color: #57375D;
+  /* add color here instead of in h1 so everything you add to title is white */
+}
+
+.container-fluid{
+  padding: 3% 15% 7%;
+}
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+  /* top, left right and bottom */
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+  .nav-item {
+    padding: 0 18px;
+  }
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light", sans-serif;
+}
+
+/* Download Buttons */
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.title-img {
+  width: 50%;
+  right: 30%;
+  position: absolute;       /* Note Z index needs position element to work */
+}
+
+/*offers*/
+#features {
+  padding: 10% 15%;
+  background-color: #FFE5E5;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 10%;
+}
+
+.iconF {
+    color: #940B92;
+    margin-bottom: 1rem;
+}
+
+.iconF:hover {
+  color: #57375D;
+  /* psuedo class :) */
+}
+
+/* testimonial section*/
+?
+
+/* .carousel-item {
+  padding: 7% 15%;
+}
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin:20px;
+} */
+
+#press {
+  background-color: #FFC7EA;
+  color: #57375D;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 20px 50px;
+}
+
+
+/* pricing section */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Call to Action Section */
+
+#cta {
+  background-color: #FFC7EA;
+  color: #57375D;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.h3friend {
+  font-family: fantasy, sans-serif;
+  font-weight: lighter;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#footer {
+  text-align: center;
+  padding: 1% 1%;
+}
+
+.Wa-Logo {
+  width: 10%;
+  margin: 20px 20px 20px 50px;
+}
+
+.Call-Logo {
+  width: 7%;
+  margin: 20px 20px 20px 50px;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* Media Query Seperate Sec */
+
+@media (max-width: 1028px){
+  .title-img {
+
+    position: static;
+    transform: rotate(0);
+  }
+  #title {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.7rem;
+    line-height: 1.5;
+
+  }
+}
